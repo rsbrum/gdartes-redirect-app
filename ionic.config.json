@@ -1,0 +1,7 @@
+{
+  "name": "gdartes-redirect-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
