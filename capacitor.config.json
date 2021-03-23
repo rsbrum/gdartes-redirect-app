@@ -1,10 +1,10 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "gdartes-redirect-app",
+  "appId": "gdartes.app",
+  "appName": "gdartes-native",
   "bundledWebRuntime": false,
   "npmClient": "npm",
-  "linuxAndroidStudioPath": "/home/rns-dev/android-studio/bin/studio.sh",
   "webDir": "www",
+  "linuxAndroidStudioPath": "/home/rns-dev/android-studio/bin/studio.sh",
   "plugins": {
     "SplashScreen": {
       "launchShowDuration": 0

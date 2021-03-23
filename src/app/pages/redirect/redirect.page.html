@@ -6,17 +6,47 @@
     </ion-buttons>
     <ion-title>Gerador de Artes</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header>#eaff00;
 -->
 <ion-content [fullscreen]="true">
 
 
-  <div id="gradient-container">
-    <img src="../../../assets/logo.png" style="height: 50px; width:140px; margin: 15%;" alt="">
-    <br>
-    <h1 style="padding: 15%;">Bem-Vindo ao <br> Gerador de Artes</h1>
-    <p style="padding: 15%;">Com o seu código de  acesso em mãos, clique no botão abaixo e comece a gerar artes!</p>
-    <ion-button color="light"><a style="color: inherit;   text-decoration: none;" target="_blank" rel="noopener noreferrer" href="https://app.geradordeartes.com.br">Iniciar</a></ion-button>
+  <div id="gradient-container" style="display: flex; flex-direction: column;justify-content: space-evenly">
+    <div style="flex: 1; display: flex; flex-direction: column;">
+        <p style="margin-top:40px; font-size: 12px;text-decoration: underline #eaff00; text-decoration-thickness: 2px;
+        ">Bem-vindo ao</p>
+        <img src="../../../assets/logo.png" style="height: 50px; width:140px; margin-left: auto; margin-right: auto;" alt="">
+    </div>
+
+    <div style="flex: 2; text-align: center; display:flex; background-image: url('../../../assets/gdartes-logo.png'); background-repeat: no-repeat; background-position: center; background-size: 250px 240px; ">
+      <div style="margin: auto;">
+        <p style="padding: 10px 50px 5px 50px;">Com o seu código de  acesso em mãos, clique no botão abaixo e comece a gerar artes! </p>
+        <ion-button color="light" (click)="openApp()">INICIAR</ion-button>         
+      </div>
+    </div>
+
+    <div style="flex: 1;">
+      <div style="">
+        <p style="padding: 30px;">Ainda não é cliente? 
+          <br>
+          <ion-button (click)="openWpp()" style="--background  :#eaff00; --color:black;	" size="small">FALE CONOSCO</ion-button>
+        </p>
+      </div>
+    </div>
+    <!-- 
+    <p>Bem-vindo ao</p>
+    <h1 style="font-weight: bold;">Gerador de Artes</h1>
+    <p style="padding: 20px;">Com o seu código de  acesso em mãos, clique no botão abaixo e comece a gerar artes! </p>
+    <ion-button color="light"><a style="color: inherit; text-decoration: none; width:150px;" target="_blank" rel="noopener noreferrer" href="https://app.geradordeartes.com.br">Iniciar</a></ion-button>
+    
+    <div style="margin-top: 200px;">
+      <p style="padding: 30px;">Ainda não é cliente? 
+        <br>
+        <ion-button expand="block"style="--background  :#eaff00; --color:black;	" size="small"> <a style="color: inherit;   text-decoration: none;" href="https://api.whatsapp.com/send?phone=+5554984091254&text=False conosco!"  target="_blank">Fale conosco!</a></ion-button>
+      </p>
+    </div>
+    -->
+    
   </div>
 </ion-content>
 
